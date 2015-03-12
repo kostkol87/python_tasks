@@ -8,7 +8,7 @@ print("connected succeed! \n Enter you expression: ")
 tmp = input()
 sock.send(str(tmp))
 
-data = sock.recv(1024)
+data = sock.recv(256)
 result = data
 sock.close()
 
